@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View) {
         when (v.id) {
-            //R.id.btnLaunchToast -> startActivity(Intent(this, ToastActivity::class.java))
+            R.id.btnLaunchToast -> startActivity(Intent(this, ToastActivity::class.java))
             //R.id.btnLaunchSnackbar -> startActivity(Intent(this, SnackbarActivity::class.java))
             //R.id.btnLaunchDialog -> startActivity(Intent(this, DialogActivity::class.java))
             //R.id.btnLaunchNotification -> startActivity(Intent(this, NotificationActivity::class.java))
