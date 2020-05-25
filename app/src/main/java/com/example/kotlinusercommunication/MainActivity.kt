@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //set on click listeners so when the button is clicked to open the relevant page
         findViewById<View>(R.id.btnLaunchToast).setOnClickListener(this)
         findViewById<View>(R.id.btnLaunchSnackbar).setOnClickListener(this)
         findViewById<View>(R.id.btnLaunchDialog).setOnClickListener(this)
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(v: View) {
+        //a case when statement to open the relevant page once clicked on the main activity
         when (v.id) {
             R.id.btnLaunchToast -> startActivity(Intent(this, ToastActivity::class.java))
             //R.id.btnLaunchSnackbar -> startActivity(Intent(this, SnackbarActivity::class.java))
